@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template: repeat(25, 1fr) / 1fr 3fr;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(135, 129, 129, 0) 0%, #878181 100%);
+}
+#menuTitle{  
+    text-align: center;
+    display: inline;
+    vertical-align: middle;
+    font-family: 'Courier New', sans-serif;
+    font-size: 2.5rem; 
+    grid-area: 1 / 1 / span 5 / span 1; 
+    border-bottom: 2px solid black; 
+}
+#menuItems{
+    grid-area: 6 / 1 / span 22 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#menuItems li{
+    height: 16.66%;
+    list-style: none;
+    padding: 5% 0%;
+    text-align: center;
+    width: 100%;
+}
+button{
+    border:none;
+    background-color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-size:2rem;
+}
+.active{
+    color: #FFF;
+    font-weight: bold;
+}
+#title{
+    grid-area: 1 / 2 / span 3 / span 1; 
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+#content{
+    grid-area: 4 / 2 / span 22 / span 1; 
+    border-left: 2px solid black;
+}
