@@ -58,4 +58,6 @@ button{
 #content{
     grid-area: 4 / 2 / span 22 / span 1; 
     border-left: 2px solid black;
+    display: flex;
+    justify-content: center;
 }

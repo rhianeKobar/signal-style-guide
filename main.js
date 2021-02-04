@@ -1,3 +1,4 @@
+document.getElementById("coloursBtn").click();
 function openLink(evt, linkName){
     let menuContent = document.getElementsByClassName('menuContent')
     for(let i=0; i<menuContent.length; i++){
